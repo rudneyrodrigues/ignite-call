@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { type NextPage } from "next";
+import { getCssText, Heading } from "@ignite-ui/react";
 
 const Home: NextPage = (): JSX.Element => {
   return (
@@ -7,9 +8,13 @@ const Home: NextPage = (): JSX.Element => {
       <Head>
         <title>Ignite Call</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+        <meta name="description" content="Ignite Call" />
+
+        <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
       </Head>
 
-      <h1>Ola mundo</h1>
+      <Heading as="h1">Ola mundo</Heading>
     </>
   )
 }
