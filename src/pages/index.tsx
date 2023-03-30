@@ -1,8 +1,8 @@
-import Head from "next/head";
-import { type NextPage } from "next";
-import { getCssText, Heading } from "@ignite-ui/react";
+import Head from 'next/head'
+import { type NextPage } from 'next'
+import { getCssText, Heading } from '@ignite-ui/react'
 
-const Home: NextPage = (): JSX.Element => {
+const Home: NextPage = () => {
   return (
     <>
       <Head>
@@ -11,7 +11,10 @@ const Home: NextPage = (): JSX.Element => {
 
         <meta name="description" content="Ignite Call" />
 
-        <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
+        <style
+          id="stitches"
+          dangerouslySetInnerHTML={{ __html: getCssText() }}
+        />
       </Head>
 
       <Heading as="h1">Ola mundo</Heading>
@@ -19,4 +22,4 @@ const Home: NextPage = (): JSX.Element => {
   )
 }
 
-export default Home;
+export default Home
