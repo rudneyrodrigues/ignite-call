@@ -6,6 +6,7 @@ import { Container, Hero, Preview } from './styles'
 
 import previewImg from '@/assets/app-preview.png'
 import Image from 'next/image'
+import { ClaimUserNameForm } from './components/ClaimUserNameForm'
 
 const Home: NextPage = () => {
   return (
@@ -27,6 +28,8 @@ const Home: NextPage = () => {
             Conecte seu calendário e permita que as pessoas marquem agendamentos
             no seu tempo
           </Text>
+
+          <ClaimUserNameForm />
         </Hero>
 
         <Preview>
